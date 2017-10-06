@@ -1,10 +1,10 @@
 Wordpress Youtube Light Weight Embed
-Contributors: (this should be a list of wordpress.org userid's)
+Contributors: Saad Ahmed Siddique
 Donate link: https://www.fiverr.com/wpguru92
-Tags: comments, spam
+Tags: wordpress , youtube , embed , light weight
 Requires at least: 3.0.1
 Tested up to: 3.4
-Stable tag: 4.3
+Stable tag: 4.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

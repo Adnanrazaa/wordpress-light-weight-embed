@@ -1,11 +1,19 @@
 Wordpress Youtube Light Weight Embed
+
 Contributors: Saad Ahmed Siddique
+
 Donate link: https://www.fiverr.com/wpguru92
+
 Tags: wordpress , youtube , embed , light weight
+
 Requires at least: 3.0.1
+
 Tested up to: 4.7
+
 Stable tag: 
+
 License: GPLv2 or later
+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 A very light weight youtube embed video wordpress plugin

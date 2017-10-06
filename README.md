@@ -1,4 +1,4 @@
-=== Plugin Name ===
+Wordpress Youtube Light Weight Embed
 Contributors: (this should be a list of wordpress.org userid's)
 Donate link: https://www.fiverr.com/wpguru92
 Tags: comments, spam

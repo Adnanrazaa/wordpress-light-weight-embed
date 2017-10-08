@@ -18,6 +18,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 A very light weight youtube embed video wordpress plugin
 
+==Demo==
+https://img.labnol.org/files/youtube-video-embed.html?_ga=2.211296341.1984479645.1507421234-759152004.1506749694
+
 == Installation ==
 
 1. Upload `wp-youtube-light-weight-embed.php` to the `/wp-content/plugins/` directory

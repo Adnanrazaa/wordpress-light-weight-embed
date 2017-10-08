@@ -23,7 +23,7 @@ https://img.labnol.org/files/youtube-video-embed.html?_ga=2.211296341.1984479645
 
 == Installation ==
 
-1. Upload `wp-youtube-light-weight-embed.php` to the `/wp-content/plugins/` directory
+1. Upload `wp-youtube-light-weight-embed.zip` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Place shortcode [youtube_embed width="450" url="youtube-link" thumb-url="thumbnail-url"]  in your pages or posts.
 1. Url attribute is required optional atts are width , thumbnail_url , allowfullscreen, showcontrols.

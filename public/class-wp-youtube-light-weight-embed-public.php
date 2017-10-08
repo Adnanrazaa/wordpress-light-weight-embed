@@ -84,7 +84,7 @@ class Wp_Youtube_Light_Weight_Embed_Public {
 		 * class.
 		 */
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/wp-youtube-light-weight-embed-public.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/wp-youtube-light-weight-embed-public.min.css', array(), $this->version, 'all' );
 
 	}
 
@@ -102,7 +102,7 @@ class Wp_Youtube_Light_Weight_Embed_Public {
 		$wordpress_youtube_light_weight_settings_options = get_option( 'wordpress_youtube_light_weight_settings_option_name' );
 	   	
 	    $wp_guru_shortcode_render = shortcode_atts(array(
-	        'width' => (int)$wordpress_youtube_light_weight_settings_options['width_0'],
+	        'width' => $wordpress_youtube_light_weight_settings_options['width_0'],
 	        'show-controls' => $wordpress_youtube_light_weight_settings_options['show_controls_2'],
 	        'disable-full_screen' => $wordpress_youtube_light_weight_settings_options['disable_fullscreen_3'],
 	        'align' => $wordpress_youtube_light_weight_settings_options['video_alignment_4'],
@@ -113,9 +113,15 @@ class Wp_Youtube_Light_Weight_Embed_Public {
 
 	    $thumb_url = $wp_guru_shortcode_render['thumb-url'];
 
+	    
+
+	    $width = $wp_guru_shortcode_render['width'];
+	    
+	    if( $width == '' ){
+	    	$width = '100';
+	    }
     	$youtube_id  = $this->getID_youtube( $wp_guru_shortcode_render['url'] );
 	    $alignment = lcfirst($wp_guru_shortcode_render['align']);
-	    $width = $wp_guru_shortcode_render['width'];
 	    $output = '<div class="video-'. $alignment .'" style="width:'. $width .'%">';
 	    $output .= '<div class="youtube-player" data-id="'. $youtube_id .'" data-img="'.$thumb_url.'"></div>';
 		$output .= '</div>';
@@ -145,7 +151,7 @@ class Wp_Youtube_Light_Weight_Embed_Public {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wp-youtube-light-weight-embed-public.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wp-youtube-light-weight-embed-public.min.js', array( 'jquery' ), $this->version, false );
 		//$video_atts = $this->wp_youtube_video_shortcode;
 		$wordpress_youtube_light_weight_settings_options = get_option( 'wordpress_youtube_light_weight_settings_option_name' );
 
